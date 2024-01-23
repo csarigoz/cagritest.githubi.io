@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <h1>Welcome to Our Website</h1>
+    <p>Here are the available pages:</p>
+    <ul id="fileList"></ul>
+
+    <script>
+        // List of file objects with 'href' and 'anchorText'
+        const files = [
+            { href: 'page1.html', anchorText: 'Page One' },
+            { href: 'page2.html', anchorText: 'Page Two' },
+            { href: 'page3.html', anchorText: 'Page Three' }
+        ];
+
+        const fileList = document.getElementById('fileList');
+
+        files.forEach(file => {
+            let listItem = document.createElement('li');
+            let link = document.createElement('a');
+            link.href = file.href;
+            link.textContent = file.anchorText;
+            listItem.appendChild(link);
+            fileList.appendChild(listItem);
+        });
+    </script>
+</body>
+</html>
