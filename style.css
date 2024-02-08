@@ -11,6 +11,10 @@ body {
     color: #333;
     background-color: #f4f4f4;
     padding: 20px;
+    max-width: 1200px;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
 /* Typography */
@@ -30,14 +34,6 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-/* Layout */
-.container {
-	max-width: 1200px;
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
 }
 
 /* Responsive Design */
