@@ -5,26 +5,25 @@
     box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, legible font */
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
-    padding: 20px;
-    max-width: 1200px;
-    width: 80%;
+    padding: 40px 20px; /* Increased padding for better spacing */
     margin: auto;
-    overflow: hidden;
+    overflow-x: hidden; /* Hide horizontal scroll */
 }
 
-/* Typography */
+/* Improved Typography for Readability */
 h1, h2 {
-    color: #333;
+    color: #0056b3; /* Slightly darker blue for better contrast */
     margin-bottom: 20px;
 }
 
 p {
-    margin-bottom: 10px;
+    margin-bottom: 20px; /* Increased for better text separation */
 }
 
 a {
@@ -34,63 +33,52 @@ a {
 
 a:hover {
     text-decoration: underline;
+    color: #0056b3; /* Darker shade on hover for distinction */
 }
 
-/* Responsive Design */
+/* Responsive Design Adjustments */
 @media screen and (max-width: 700px) {
-    .container {
-        width: 95%;
+    body {
+        padding: 20px; /* Adjusted padding for smaller screens */
     }
 
     h1, h2 {
-        font-size: 20px;
+        font-size: 22px; /* Slightly increased font size for readability */
     }
 }
 
-/* Table Base Styling */
+/* Table Enhancements for Readability and Aesthetics */
 table {
-    width: 100%; /* Full-width */
-    border-collapse: collapse; /* Collapse borders */
-    margin: 25px 0; /* Add margin */
-    font-size: 0.9em; /* Adjust font size */
-    font-family: sans-serif; /* Use a sans-serif font */
-    min-width: 400px; /* Minimum width */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); /* Add box shadow for depth */
-  }
-  
-  /* Table Header Styling */
-  th,
-  td {
-    padding: 12px 15px; /* Add padding */
-    text-align: left; /* Align text to the left */
-  }
-  
-  th {
-    background-color: #009879; /* Darker background color for the header */
-    color: #ffffff; /* White text color */
-    text-transform: uppercase; /* Uppercase text for headers */
-  }
-  
-  /* Table Body Styling */
-  tr {
-    border-bottom: 1px solid #dddddd; /* Add bottom border to each row */
-  }
-  
-  /* Row Hover Effects */
-  tr:nth-of-type(even) {
-    background-color: #f3f3f3; /* Lighter background for even rows */
-  }
-  
-  tr:hover {
-    background-color: #f1f1f1; /* Change background color on hover */
-  }
-  
-  /* Responsive Table */
-  @media screen and (max-width: 600px) {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1em; /* Increased for readability */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtler shadow for depth */
+}
+
+th, td {
+    padding: 15px; /* Increased padding for comfort */
+    text-align: left;
+}
+
+th {
+    background-color: #007bff; /* Consistent theme color */
+    color: #ffffff;
+}
+
+tr:nth-of-type(even) {
+    background-color: #f2f2f2; /* Softer color for even rows */
+}
+
+tr:hover {
+    background-color: #e9ecef; /* Lighter hover state for distinction */
+}
+
+/* Enhanced Responsive Table for Accessibility */
+@media screen and (max-width: 600px) {
     table {
-      width: 100%;
-      display: block;
-      overflow-x: auto; /* Enable horizontal scrolling on small screens */
+        display: block;
+        overflow-x: scroll; /* Improved scrolling on mobile devices */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
     }
-  }
-  
+}
