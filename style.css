@@ -46,3 +46,51 @@ a:hover {
         font-size: 20px;
     }
 }
+
+/* Table Base Styling */
+table {
+    width: 100%; /* Full-width */
+    border-collapse: collapse; /* Collapse borders */
+    margin: 25px 0; /* Add margin */
+    font-size: 0.9em; /* Adjust font size */
+    font-family: sans-serif; /* Use a sans-serif font */
+    min-width: 400px; /* Minimum width */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); /* Add box shadow for depth */
+  }
+  
+  /* Table Header Styling */
+  th,
+  td {
+    padding: 12px 15px; /* Add padding */
+    text-align: left; /* Align text to the left */
+  }
+  
+  th {
+    background-color: #009879; /* Darker background color for the header */
+    color: #ffffff; /* White text color */
+    text-transform: uppercase; /* Uppercase text for headers */
+  }
+  
+  /* Table Body Styling */
+  tr {
+    border-bottom: 1px solid #dddddd; /* Add bottom border to each row */
+  }
+  
+  /* Row Hover Effects */
+  tr:nth-of-type(even) {
+    background-color: #f3f3f3; /* Lighter background for even rows */
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1; /* Change background color on hover */
+  }
+  
+  /* Responsive Table */
+  @media screen and (max-width: 600px) {
+    table {
+      width: 100%;
+      display: block;
+      overflow-x: auto; /* Enable horizontal scrolling on small screens */
+    }
+  }
+  
